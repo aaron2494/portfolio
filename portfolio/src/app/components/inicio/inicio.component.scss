@@ -1,0 +1,48 @@
+.hero-section {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden; /* Para asegurarse de que las burbujas no salgan del contenedor */
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    color: #333;
+    position: relative;
+    z-index: 1; /* Asegura que el título esté por encima de las burbujas */
+    animation: fadeIn 4s ease-in-out;
+  }
+  
+  p {
+    font-size: 2rem;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .title-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+  }
+ 
+  
+  .btn-explore {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-explore:hover {
+    background-color: #4aff9c;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+
+  
