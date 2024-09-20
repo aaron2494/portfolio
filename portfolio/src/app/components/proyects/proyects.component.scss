@@ -1,3 +1,17 @@
 h5 ,p, li{
     color: #fff;
 }
+.card-icons {
+    margin-top: 10px;
+  }
+  
+  svg {
+    width: 40px; /* Tamaño de los íconos */
+    height: auto;
+    margin: 0 10px; /* Espaciado entre los íconos */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  svg:hover {
+    transform: scale(1.2); /* Efecto de hover para ampliar ligeramente los íconos */
+  }

@@ -4,8 +4,8 @@
 body {
     font-family: "Ubuntu", sans-serif;
   background: radial-gradient(circle at center, #4aff9c, #53d1ff,#ffffff);
-  background-size: 300% 300%;
-  animation: gradientFlow 20s ease infinite;
+  background-size: 500% 300%;
+  animation: gradientFlow 30s ease infinite;
 }
 
 @keyframes gradientFlow {
