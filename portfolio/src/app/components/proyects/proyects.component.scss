@@ -15,3 +15,36 @@ h5 ,p, li{
   svg:hover {
     transform: scale(1.2); /* Efecto de hover para ampliar ligeramente los íconos */
   }
+  a{
+    display: flex;
+    justify-content: center;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card {
+    opacity: 0;
+    animation: fadeIn 3s ease forwards; /* Duración de la animación */
+  }
+  
+  .card:nth-child(1) {
+    animation-delay: 1s; /* Primer card */
+  }
+  
+  .card:nth-child(2) {
+    animation-delay: 2s; /* Segundo card */
+  }
+  
+  .card:nth-child(3) {
+    animation-delay: 3s; /* Tercer card */
+  }
+  
+ 
