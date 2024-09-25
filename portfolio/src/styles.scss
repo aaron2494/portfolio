@@ -1,9 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+html{
+  min-height: 100vh;
+}
 body {
     font-family: "Ubuntu", sans-serif;
-  background: radial-gradient(circle at center, #4aff9c, #53d1ff,#ffffff);
+  background: radial-gradient(circle at center, #4aff9c, #53d1ff,#ff00c8);
   background-size: 500% 300%;
   animation: gradientFlow 30s ease infinite;  
 }
