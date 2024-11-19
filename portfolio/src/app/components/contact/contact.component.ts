@@ -26,9 +26,9 @@ export class ContactComponent implements OnInit {
 
   sendEmail() {
     if (this.contactForm.valid) {
-      const serviceID = 'your_service_id';
-      const templateID = 'your_template_id';
-      const userID = 'your_user_id';
+      const serviceID = 'service_23f1zaj';
+      const templateID = 'template_wb0ybs9';
+      const userID = 'u8Vz8nts2MqNMtH5E';
 
       const params = {
         name: this.contactForm.get('name')?.value,
