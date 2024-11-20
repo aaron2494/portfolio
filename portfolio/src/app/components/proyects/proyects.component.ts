@@ -5,7 +5,7 @@ import { NgFor, NgIf } from '@angular/common';
 @Component({
   selector: 'app-proyects',
   standalone: true,
-  imports: [NgIf, NgFor],
+  imports: [],
   templateUrl: './proyects.component.html',
   styleUrl: './proyects.component.scss'
 })

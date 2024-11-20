@@ -1,18 +1,21 @@
 .contact-form {
-    background-color: rgb(32 36 40);
+    
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    background: radial-gradient(circle at center, hsl(0, 0%, 98%), #8e8e8e,#f9f9f9);
+    background-size: 500% 300%;
   
     h2 {
       font-size: 2rem;
       font-weight: bold;
-      color: #ffffff;
+      color: #000000;
     }
  
     .input-group-text {
       background-color: #007bff;
-      color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
       border: none;
       height: 35px;
     }

@@ -1,5 +1,5 @@
 h5 ,p, li{
-    color: #fff;
+    color: #000;
 }
 .card-icons {
     margin-top: 10px;
@@ -24,6 +24,8 @@ h5 ,p, li{
     opacity: 0;
     transform: translateX(-100%); /* Inicia fuera de la pantalla */
     transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    background: radial-gradient(circle at center, hsl(0, 0%, 98%), #8e8e8e,#f9f9f9);
+    background-size: 500% 300%;
   }
   
   .card.animate {
