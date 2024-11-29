@@ -1,9 +1,9 @@
 .container{ 
-  background: radial-gradient(circle at center, #ffffff, #c5c5c5,#ececec); 
+  background:white; 
   padding: 20px;
   border-radius: 10px;
   justify-content: center;
-  background-size: 500% 300%;
+  
   margin-top: 20px;
   opacity: 0;
   transform: translateX(-100%); /* Inicia fuera de la pantalla */ 
@@ -16,6 +16,18 @@
     opacity: 1;
     transform: translateX(0); /* Aparece en su posición final */
   }
+  .form-control {
+    background: white;
+    border: none;
+    border-bottom: 2px solid #c5c5c5; /* Color de la línea debajo */
+    border-radius: 0;
+    outline: none;
+    padding-left: 0;
+    padding-right: 0;
+    
+  }
+  
+ 
 .contact-form {
     display:flex ;
     flex-direction: column;
@@ -31,22 +43,14 @@
     }
  
     .input-group-text {
-      background-color: #007bff;
+      
       color: rgb(0, 0, 0);
       border: none;
       height: 35px;
+      margin: 5px;
     }
   
-    .form-control {
-      border-radius: 0.25rem;
-      box-shadow: none;
-      border: 1px solid #ced4da;
-  
-      &:focus {
-        border-color: #007bff;
-        box-shadow: none;
-      }
-    }
+ 
   
     button {
       background-color: #007bff;

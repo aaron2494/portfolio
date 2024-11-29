@@ -2,10 +2,10 @@
   opacity: 0;
   transform: translateX(-100%); /* Inicia fuera de la pantalla */ 
   transition: transform 1s ease-out, opacity 1.5s ease-out;
-  background: radial-gradient(circle at center, #ffffff, #c5c5c5,#ececec); 
+  background: white;
   padding: 20px;
   border-radius: 10px;
-  background-size: 500% 300%;
+  
   
   max-width: 400px; 
   }
