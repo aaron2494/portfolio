@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    height: 100vh; /* La altura total de la pantalla */
+  }
+  
+app-calendar,
+app-contatc{
+    flex: 1; /* Ocupa el mismo espacio */
+  }

@@ -1,20 +1,48 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import emailjs from 'emailjs-com';
-import { NgIf } from '@angular/common';
+import { CommonModule, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ReactiveFormsModule,FontAwesomeModule,NgIf],
+  imports: [ReactiveFormsModule,FontAwesomeModule,CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent implements OnInit {
   contactForm!: FormGroup;
-  
-  constructor(private fb: FormBuilder) {}
+  container: HTMLElement[] = [];
+  constructor(private fb: FormBuilder,private elRef: ElementRef) {}
+  ngAfterViewInit(): void {
+    // Obtén todas las cards
+    this.container = Array.from(this.elRef.nativeElement.querySelectorAll('.container'));
+    this.checkVisibility();
+  }
+  @HostListener('window:scroll', ['$event'])
+  onScroll(): void {
+    this.checkVisibility();
+  }
+  private checkVisibility(): void {
+    const windowHeight = window.innerHeight;
+
+    // Asegúrate de que cada tarjeta tiene la animación aplicada correctamente
+    this.container.forEach((container, index) => {
+      const rect = container.getBoundingClientRect();
+      if (rect.top < windowHeight * 0.8) {
+        // Aplica un retraso escalonado solo en escritorio (ancho > 768px)
+        if (window.innerWidth > 768) {
+          setTimeout(() => {
+            container.classList.add('animate');
+          }, index * 500); // Retraso de 300ms entre cartas
+        } else {
+          // En móviles, aplica la clase sin retraso
+          container.classList.add('animate');
+        }
+      }
+    });
+  }
 
   ngOnInit(): void {
     this.contactForm = this.fb.group({

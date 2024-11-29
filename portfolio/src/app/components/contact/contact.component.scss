@@ -1,11 +1,28 @@
+.container{ 
+  background: radial-gradient(circle at center, #ffffff, #c5c5c5,#ececec); 
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  background-size: 500% 300%;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateX(-100%); /* Inicia fuera de la pantalla */ 
+  transition: transform 1s ease-out, opacity 1.5s ease-out;
+
+  max-width: 400px; 
+  }
+  .container.animate {
+  
+    opacity: 1;
+    transform: translateX(0); /* Aparece en su posición final */
+  }
 .contact-form {
-    
+    display:flex ;
+    flex-direction: column;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    background: radial-gradient(circle at center, hsl(0, 0%, 98%), #8e8e8e,#f9f9f9);
-    background-size: 500% 300%;
+ 
   
     h2 {
       font-size: 2rem;
